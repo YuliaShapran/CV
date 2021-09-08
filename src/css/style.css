@@ -2,10 +2,40 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	
 }
 
 body {
-	font-family: 'Inter', sans-serif;;
+	font-family: "Inter", sans-serif;
 	background-color: black;
+}
+
+.main {
+	height: 100%;
+	max-width: 1680px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 51px;
+}
+
+.item-introdact__title {
+	font-weight: 600;
+	font-size: 75px;
+	color: #ffffff;
+}
+
+.introdact-info__item-title {
+	font-weight: 500;
+	font-size: 15px;
+	color: #ffffff;
+	opacity: 0.6;
+}
+
+.introdact-info__item-descr {
+	font-weight: 500;
+	font-size: 15px;
+	color: #ffffff;
 }
