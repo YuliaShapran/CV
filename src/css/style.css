@@ -18,7 +18,7 @@ body {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, minmax(460px, auto));
 	grid-template-rows: minmax(850px, auto);
 	column-gap: 51px;
 }
@@ -118,9 +118,40 @@ body {
 .item__info-text li {
 	margin-left: 17px;
 	margin-bottom: 10px;
-
 }
 
 .item__info-text li:last-child {
 	margin-bottom: 45px;
+}
+
+.item__quote {
+	position: relative;
+	margin-top: 50px;
+	width: 460px;
+	height: 750px;
+	background: linear-gradient(360deg, #6a595b -21.87%, rgba(131, 104, 107, 0) 45.4%);
+	border-radius: 7px;
+	background: url(../img/avatar.png) center center / cover no-repeat;
+}
+
+.item__quote-text {
+	position: absolute;
+	width: 375px;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 35px;
+	color: #ffffff;
+	left: 35px;
+	bottom: 83px;
+}
+
+blockquote p::before {
+	content: open-quote;
+}
+blockquote p::after {
+	content: close-quote;
+}
+blockquote p {
+	quotes: "“" "”" "‘" "’";
+	text-indent: -0.45em;
 }
