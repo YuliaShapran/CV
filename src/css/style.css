@@ -14,12 +14,12 @@ body {
 	max-width: 1680px;
 	margin: 0 auto;
 	padding: 0 100px 0 100px;
-
 }
 
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: minmax(850px, auto);
 	column-gap: 51px;
 }
 
@@ -93,4 +93,34 @@ body {
 	height: 100%;
 	background: #ffffff;
 	border-radius: 10px;
+}
+
+.item__info {
+	margin-top: 102px;
+}
+
+.item__info-title {
+	margin-bottom: 15px;
+}
+
+.text {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 27px;
+	color: #ffffff;
+	opacity: 0.8;
+}
+
+.item__info-text {
+	margin-bottom: 50px;
+}
+
+.item__info-text li {
+	margin-left: 17px;
+	margin-bottom: 10px;
+
+}
+
+.item__info-text li:last-child {
+	margin-bottom: 45px;
 }
