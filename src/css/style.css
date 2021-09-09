@@ -25,11 +25,21 @@ body {
 
 .introdact-info {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, minmax(206px, auto));
+	grid-template-rows: repeat(2, minmax(87px, auto));
 	column-gap: 50px;
 	row-gap: 28px;
 	margin-bottom: 45px;
+}
+
+.introdact-info__item {
+	display: flex;
+	flex-direction: column;
+}
+
+.introdact-info__item img {
+	height: 30px;
+	width: 30px;
 }
 
 .item-introdact__title {
@@ -54,6 +64,10 @@ body {
 	font-size: 15px;
 	line-height: 25px;
 	color: #ffffff;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .title {
@@ -143,6 +157,11 @@ body {
 	color: #ffffff;
 	left: 35px;
 	bottom: 83px;
+
+	/* display: -webkit-box;
+	-webkit-line-clamp: 18;
+	-webkit-box-orient: vertical;
+	overflow: hidden; */
 }
 
 blockquote p::before {
