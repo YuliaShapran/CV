@@ -13,6 +13,8 @@ body {
 	height: 100%;
 	max-width: 1680px;
 	margin: 0 auto;
+	padding: 0 100px 0 100px;
+
 }
 
 .wrapper {
@@ -21,15 +23,28 @@ body {
 	column-gap: 51px;
 }
 
+.introdact-info {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 50px;
+	row-gap: 28px;
+	margin-bottom: 45px;
+}
+
 .item-introdact__title {
 	font-weight: 600;
 	font-size: 75px;
 	color: #ffffff;
+	margin-top: 90px;
+	margin-bottom: 65px;
 }
 
 .introdact-info__item-title {
+	margin-top: 7px;
 	font-weight: 500;
 	font-size: 15px;
+	line-height: 25px;
 	color: #ffffff;
 	opacity: 0.6;
 }
@@ -37,5 +52,45 @@ body {
 .introdact-info__item-descr {
 	font-weight: 500;
 	font-size: 15px;
+	line-height: 25px;
 	color: #ffffff;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 25px;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.tech__ratings-title {
+	margin-bottom: 15px;
+}
+
+.tech__ratings-items {
+	margin-bottom: 17px;
+}
+
+.item__ratings-title {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 25px;
+	color: #ffffff;
+	opacity: 0.8;
+	margin-bottom: 1px;
+}
+
+.tech__ratings-line {
+	width: 460px;
+	height: 7px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+}
+
+.tech__ratings-line span {
+	display: block;
+	height: 100%;
+	background: #ffffff;
+	border-radius: 10px;
 }
