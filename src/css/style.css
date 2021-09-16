@@ -346,32 +346,3 @@ blockquote p {
 	}
 }
 
-/* @media (max-width: 340px) {
-	.media {
-		width: 340px;
-		padding: 0;
-	}
-
-	.wrapper {
-		grid-template-columns: 300px;
-		grid-template-rows: repeat(3, 1fr);
-		row-gap: 10px;
-	}
-
-	.item__quote {
-		grid-row: 1/2;
-	}
-
-	.item-introdact {
-		grid-row: 2/3;
-	}
-
-	.item__info {
-		grid-row: 3/4;
-	}
-
-	.item__quote img {
-		width: 50%;
-		height: 50%;
-	}
-} */
