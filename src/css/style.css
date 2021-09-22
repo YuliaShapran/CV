@@ -178,6 +178,26 @@ blockquote p {
 
 /* media */
 
+@media (max-width: 1440px) {
+	.main {
+		max-width: 1360px;
+	}
+
+	.wrapper {
+		grid-template-columns: repeat(3, 435px);
+		column-gap: 25px;
+	}
+
+	.item__quote img {
+		width: 95%;
+		height: 95%;
+	}
+
+	.item__quote-text {
+		bottom: 10%;
+	}
+}
+
 @media (max-width: 1400px) {
 	.main {
 		height: 100%;
@@ -212,6 +232,14 @@ blockquote p {
 	.text {
 		font-size: 14px;
 		line-height: 25px;
+	}
+
+	.item__quote-text {
+		width: 327px;
+		font-size: 27px;
+		line-height: 37px;
+		left: 35px;
+		bottom: 10%;
 	}
 }
 
@@ -411,17 +439,17 @@ blockquote p {
 @media (width: 320px) {
 	.main {
 		width: 100%;
-		padding: 0 5px 0 5px;
+		padding: 0 10px 0 10px;
 		overflow-x: hidden;
 	}
 
 	.wrapper {
-		grid-template-columns: 320px;
+		grid-template-columns: 300px;
 		grid-template-rows: repeat(3, auto);
 	}
 
 	.item-introdact__title {
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	.introdact-info {
@@ -431,23 +459,23 @@ blockquote p {
 	}
 
 	.introdact-info__item img {
-		height: 30px;
-		width: 30px;
+		height: 25px;
+		width: 25px;
 	}
 
 	.introdact-info__item-title,
 	.introdact-info__item-descr {
-		font-size: 17px;
-		line-height: 25px;
+		font-size: 12px;
+		line-height: 19px;
 	}
 
 	.title {
-		font-size: 35px;
+		font-size: 25px;
 	}
 
 	.item__ratings-title {
-		font-size: 17px;
-		line-height: 33px;
+		font-size: 14px;
+		line-height: 25px;
 		margin-bottom: 0px;
 	}
 
@@ -457,7 +485,7 @@ blockquote p {
 
 	.text {
 		width: 300px;
-		font-size: 15px;
+		font-size: 14px;
 		text-align: justify;
 	}
 
@@ -471,10 +499,10 @@ blockquote p {
 	}
 
 	.item__quote-text {
-		width: 269px;
-		font-size: 23px;
-		line-height: 31px;
-		left: 28px;
+		width: 238px;
+		font-size: 19px;
+		line-height: 25px;
+		left: 19px;
 		bottom: 10%;
 	}
 }
